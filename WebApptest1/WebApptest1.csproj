@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="website\admin\adminlogin.aspx" />
     <Content Include="website\admin\assets\css\bootstrap.css" />
     <Content Include="website\admin\assets\css\custom.css" />
     <Content Include="website\admin\assets\css\font-awesome.css" />
@@ -92,6 +93,7 @@
     <Content Include="website\admin\assets\js\bootstrap.min.js" />
     <Content Include="website\admin\assets\js\custom.js" />
     <Content Include="website\admin\assets\js\jquery-1.10.2.js" />
+    <Content Include="website\admin\logincss\style.css" />
     <Content Include="website\admin\testing.aspx" />
     <Content Include="website\index.html" />
     <Content Include="Web.config">
@@ -112,6 +114,13 @@
     </Compile>
     <Compile Include="website\admin\admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="website\admin\adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\admin\adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="website\admin\testing.aspx.cs">
       <DependentUpon>testing.aspx</DependentUpon>
