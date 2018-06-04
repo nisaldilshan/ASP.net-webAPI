@@ -82,6 +82,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\shopping.mdf" />
+    <Content Include="App_Data\shopping_log.ldf">
+      <DependentUpon>shopping.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="website\admin\adminlogin.aspx" />
     <Content Include="website\admin\assets\css\bootstrap.css" />
@@ -194,9 +198,7 @@
     <Content Include="website\admin\assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="website\admin\assets\fonts\glyphicons-halflings-regulard41d.eot" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

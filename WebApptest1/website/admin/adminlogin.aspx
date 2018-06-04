@@ -27,7 +27,9 @@
   <label>Password <span>*</span></label>
   <asp:TextBox ID="t2" runat="server"></asp:TextBox>
   <br />
-    <asp:Button ID="b1" runat="server" Text="Login" />
+    <asp:Button ID="b1" runat="server" Text="Login" OnClick="b1_Click" />
+    <br />
+    <asp:Label ID="l1" runat="server" Text =""></asp:Label>
     <br />
 </form>
     
