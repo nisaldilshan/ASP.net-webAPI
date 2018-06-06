@@ -8,7 +8,7 @@
         <ItemTemplate>
             <ul>
                 <li class="last">
-                    <a href="#"><img src="<%#Eval("product_images") %>"" alt=""</a>
+                    <a href="product_desc.aspx?id=<%#Eval("id") %>"><img src="<%#Eval("product_images") %>" alt=""</a>
                     <div class="product-info">
                         <h3> <%#Eval("product_name") %> </h3>
                         <div class="product-desc">
@@ -16,7 +16,7 @@
                             <p><%#Eval("product_desc") %></p>
                             <strong class="price">$<%#Eval("product_price") %></strong>
                         </div>
-                    </div>
+                    </div>   
                 </li>
             </ul>
         </ItemTemplate>

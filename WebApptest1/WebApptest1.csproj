@@ -149,6 +149,13 @@
     <Compile Include="website\user\display_item.aspx.designer.cs">
       <DependentUpon>display_item.aspx</DependentUpon>
     </Compile>
+    <Compile Include="website\user\product_desc.aspx.cs">
+      <DependentUpon>product_desc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\product_desc.aspx.designer.cs">
+      <DependentUpon>product_desc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="website\user\testing.aspx.cs">
       <DependentUpon>testing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,6 +210,7 @@
     <Content Include="website\user\js\jquery-1.4.1.min.js" />
     <Content Include="website\user\js\jquery-func.js" />
     <Content Include="website\user\js\jquery.jcarousel.pack.js" />
+    <Content Include="website\user\product_desc.aspx" />
     <Content Include="website\user\testing.aspx" />
     <Content Include="website\user\user.Master" />
     <Content Include="website\admin\admin.Master" />
