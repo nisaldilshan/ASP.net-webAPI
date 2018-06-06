@@ -104,6 +104,7 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="website\user\usertesting.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -169,6 +170,13 @@
     </Compile>
     <Compile Include="website\user\user.Master.designer.cs">
       <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\usertesting.aspx.cs">
+      <DependentUpon>usertesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\usertesting.aspx.designer.cs">
+      <DependentUpon>usertesting.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

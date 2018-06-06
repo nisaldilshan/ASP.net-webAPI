@@ -23,5 +23,6 @@
         <FooterTemplate>
         </FooterTemplate>
     </asp:Repeater>
-
+    <br />
+    <asp:Button ID="b1" runat="server" Text="Add to cart" OnClick="B1_Click" />
 </asp:Content>
