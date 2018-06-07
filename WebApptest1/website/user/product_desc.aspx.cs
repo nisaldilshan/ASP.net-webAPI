@@ -63,15 +63,23 @@ namespace WebApptest1.website.user
 
             con.Close();
 
-            if (Request.Cookies["aa"] == null)
+            if (Convert.ToInt32(t1.Text)> Convert.ToInt32(product_qty))
             {
-                Response.Cookies["aa"].Value = product_name.ToString() + "," + product_description.ToString() + "," + product_price.ToString() + "," + product_qty.ToString() + "," + product_images.ToString();
-                Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
+                l1.Text = "Quantity Exceeded";
             }
             else
             {
-                Response.Cookies["aa"].Value = Request.Cookies["aa"].Value + "|" + product_name.ToString() + "," + product_description.ToString() + "," + product_price.ToString() + "," + product_qty.ToString() + "," + product_images.ToString();
-                Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
+                l1.Text = "";
+                if (Request.Cookies["aa"] == null)
+                {
+                    Response.Cookies["aa"].Value = product_name.ToString() + "," + product_description.ToString() + "," + product_price.ToString() + "," + product_qty.ToString() + "," + product_images.ToString();
+                    Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
+                }
+                else
+                {
+                    Response.Cookies["aa"].Value = Request.Cookies["aa"].Value + "|" + product_name.ToString() + "," + product_description.ToString() + "," + product_price.ToString() + "," + product_qty.ToString() + "," + product_images.ToString();
+                    Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
+                }
             }
         }
     }

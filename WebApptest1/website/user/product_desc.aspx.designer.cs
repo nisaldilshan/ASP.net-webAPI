@@ -22,6 +22,15 @@ namespace WebApptest1.website.user {
         protected global::System.Web.UI.WebControls.Repeater d1;
         
         /// <summary>
+        /// t1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox t1;
+        
+        /// <summary>
         /// b1 control.
         /// </summary>
         /// <remarks>
@@ -29,5 +38,14 @@ namespace WebApptest1.website.user {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button b1;
+        
+        /// <summary>
+        /// l1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label l1;
     }
 }
