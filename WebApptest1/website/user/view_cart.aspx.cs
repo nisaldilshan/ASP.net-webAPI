@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace WebApptest1.website
+namespace WebApptest1.website.user
 {
     public partial class view_cart : System.Web.UI.Page
     {
@@ -15,11 +15,6 @@ namespace WebApptest1.website
         string t;
         string[] a = new string[5];
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void b1_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
             dt.Columns.AddRange(new DataColumn[5] { new DataColumn("product_name"), new DataColumn("product_desc"), new DataColumn("product_price"), new DataColumn("product_qty"), new DataColumn("product_images") });

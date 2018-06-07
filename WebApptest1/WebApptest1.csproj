@@ -105,7 +105,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="website\user\usertesting.aspx" />
-    <Content Include="website\view_cart.aspx" />
+    <Content Include="website\user\view_cart.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -179,11 +179,11 @@
     <Compile Include="website\user\usertesting.aspx.designer.cs">
       <DependentUpon>usertesting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="website\view_cart.aspx.cs">
+    <Compile Include="website\user\view_cart.aspx.cs">
       <DependentUpon>view_cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="website\view_cart.aspx.designer.cs">
+    <Compile Include="website\user\view_cart.aspx.designer.cs">
       <DependentUpon>view_cart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
