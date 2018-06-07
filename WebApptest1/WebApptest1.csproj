@@ -104,6 +104,7 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="website\user\delete_cart.aspx" />
     <Content Include="website\user\usertesting.aspx" />
     <Content Include="website\user\view_cart.aspx" />
   </ItemGroup>
@@ -143,6 +144,13 @@
     </Compile>
     <Compile Include="website\admin\testing.aspx.designer.cs">
       <DependentUpon>testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\delete_cart.aspx.cs">
+      <DependentUpon>delete_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\delete_cart.aspx.designer.cs">
+      <DependentUpon>delete_cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="website\user\display_item.aspx.cs">
       <DependentUpon>display_item.aspx</DependentUpon>

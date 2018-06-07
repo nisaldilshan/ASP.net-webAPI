@@ -13,6 +13,9 @@
                     <td> <%#Eval("product_desc") %></td>
                     <td> <%#Eval("product_price") %></td>
                     <td> <%#Eval("product_qty") %></td>
+                    <td>
+                        <a href="delete_cart.aspx?id=<%#Eval("id") %>">delete</a>
+                    </td>
                 </tr>
             </ItemTemplate>
             <FooterTemplate>
