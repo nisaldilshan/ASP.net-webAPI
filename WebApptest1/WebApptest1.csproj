@@ -105,6 +105,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="website\user\delete_cart.aspx" />
+    <Content Include="website\user\login.aspx" />
     <Content Include="website\user\registration.aspx" />
     <Content Include="website\user\usertesting.aspx" />
     <Content Include="website\user\view_cart.aspx" />
@@ -159,6 +160,13 @@
     </Compile>
     <Compile Include="website\user\display_item.aspx.designer.cs">
       <DependentUpon>display_item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="website\user\product_desc.aspx.cs">
       <DependentUpon>product_desc.aspx</DependentUpon>
