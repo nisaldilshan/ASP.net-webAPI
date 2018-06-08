@@ -104,8 +104,11 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="website\user\checkout.aspx" />
+    <Content Include="website\user\check_order_details.aspx" />
     <Content Include="website\user\delete_cart.aspx" />
     <Content Include="website\user\login.aspx" />
+    <Content Include="website\user\logout.aspx" />
     <Content Include="website\user\registration.aspx" />
     <Content Include="website\user\usertesting.aspx" />
     <Content Include="website\user\view_cart.aspx" />
@@ -147,6 +150,20 @@
     <Compile Include="website\admin\testing.aspx.designer.cs">
       <DependentUpon>testing.aspx</DependentUpon>
     </Compile>
+    <Compile Include="website\user\checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\check_order_details.aspx.cs">
+      <DependentUpon>check_order_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\check_order_details.aspx.designer.cs">
+      <DependentUpon>check_order_details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="website\user\delete_cart.aspx.cs">
       <DependentUpon>delete_cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,6 +184,13 @@
     </Compile>
     <Compile Include="website\user\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="website\user\product_desc.aspx.cs">
       <DependentUpon>product_desc.aspx</DependentUpon>

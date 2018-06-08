@@ -33,7 +33,17 @@ namespace WebApptest1.website.user
 
             if (tot>0)
             {
-                Response.Redirect("checkout.aspx");
+                
+                if (Session["checkoutbutton"] == "yes")
+                {
+                    Session["user"] = emailBox.Text;
+                    Response.Redirect("check_order_details.aspx");
+                }
+                else
+                {
+                    Session["user"] = emailBox.Text;
+                    Response.Redirect("view_cart.aspx");
+                }
             }
             else
             {

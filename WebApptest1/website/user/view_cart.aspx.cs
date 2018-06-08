@@ -46,6 +46,7 @@ namespace WebApptest1.website.user
 
         protected void b1_Click(object sender, EventArgs e)
         {
+            Session["checkoutbutton"] = "yes";
             Response.Redirect("checkout.aspx");
         }
     }
