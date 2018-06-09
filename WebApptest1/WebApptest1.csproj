@@ -100,7 +100,7 @@
     <Content Include="website\admin\assets\js\jquery-1.10.2.js" />
     <Content Include="website\admin\logincss\style.css" />
     <Content Include="website\admin\testing.aspx" />
-    <Content Include="website\index.html" />
+    <Content Include="index.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -109,6 +109,8 @@
     <Content Include="website\user\delete_cart.aspx" />
     <Content Include="website\user\login.aspx" />
     <Content Include="website\user\logout.aspx" />
+    <Content Include="website\user\payment_gateway.aspx" />
+    <Content Include="website\user\payment_success.aspx" />
     <Content Include="website\user\registration.aspx" />
     <Content Include="website\user\usertesting.aspx" />
     <Content Include="website\user\view_cart.aspx" />
@@ -191,6 +193,20 @@
     </Compile>
     <Compile Include="website\user\logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\payment_gateway.aspx.cs">
+      <DependentUpon>payment_gateway.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\payment_gateway.aspx.designer.cs">
+      <DependentUpon>payment_gateway.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="website\user\payment_success.aspx.cs">
+      <DependentUpon>payment_success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="website\user\payment_success.aspx.designer.cs">
+      <DependentUpon>payment_success.aspx</DependentUpon>
     </Compile>
     <Compile Include="website\user\product_desc.aspx.cs">
       <DependentUpon>product_desc.aspx</DependentUpon>
