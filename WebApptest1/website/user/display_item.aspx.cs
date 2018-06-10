@@ -17,7 +17,17 @@ namespace WebApptest1.website.user
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from product";
+
+            if (Request.QueryString["category"] == null)
+            {
+                cmd.CommandText = "select * from product";
+            }
+            else
+            {
+                cmd.CommandText = "select * from product where product_category='"+ Request.QueryString["category"].ToString() + "'";
+            }
+
+            
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();
