@@ -126,11 +126,37 @@
             <li><a href="#">Category 1</a></li>
             <li><a href="#">Category 2</a></li>
             <li class="last"><a href="#">Category 3</a></li>
-
-          </ul>
+          </ul>   
         </div>
       </div>
       <!-- End Categories -->
+
+      <!-- Calender -->
+      <div class="box calender">
+        <h2>Calender <span></span></h2>
+        <div class="box-calendercontent">
+          <ul>
+            <asp:Calendar ID="Calendar" runat="server" Height="165px" Width="221px" OnSelectionChanged="Calendar_SelectionChanged"></asp:Calendar>
+          </ul>
+
+          <ul>
+              <asp:DataList ID="dd" runat="server">
+                <ItemTemplate>
+                    <li> <a href ="display_item.aspx?category=<%#Eval("product_category") %>">blabla</a></li>
+                </ItemTemplate>
+            </asp:DataList>
+          </ul>
+
+          <p>Date is: 
+            <asp:Label ID="dateLabel" runat="server" Text="-"></asp:Label>
+          </p>
+
+          <p>
+              <asp:Button ID="Button1" runat="server" Text="Continue" Width="88px" OnClick="Button1_Click" />
+          </p>
+        </div>      
+      </div>
+      <!-- End Calender -->
 
     </div>
     <!-- End Sidebar -->

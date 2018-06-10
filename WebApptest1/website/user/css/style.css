@@ -59,7 +59,10 @@ a.cart-link:hover { text-decoration: underline;}
 #main { padding:10px 0 0 0; }
 
 .box { padding:1px; border:solid 1px #dedede; margin-bottom:10px;}
-.box h2{ background:#7f7f7f; color:#fff; font-weight: normal; padding:0 5px; position:relative; height:27px; line-height:27px; }
+.box h2{ background:#7f7f7f; color:#fff; font-weight: normal; padding:0 5px; position:relative; height:27px; line-height:27px;
+    top: 0px;
+    left: 0px;
+}
 .box h2 span{ position:absolute; width:10px; height:5px; background:url(images/h2-arr.gif); top:27px; right:10px; font-size:0; line-height:0;}
 .box-content { padding:5px;}
 
