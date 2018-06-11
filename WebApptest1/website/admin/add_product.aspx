@@ -29,7 +29,7 @@
 
         <tr>
         <td colspan="2" align="center">
-            <asp:Calendar ID="Calendar1" runat="server" Width="238px"></asp:Calendar>
+            <asp:Calendar ID="Calendar1" runat="server" Width="238px" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
         </td>
         </tr>
 

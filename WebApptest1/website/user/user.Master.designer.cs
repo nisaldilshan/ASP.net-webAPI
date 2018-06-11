@@ -40,15 +40,6 @@ namespace WebApptest1.website.user {
         protected global::System.Web.UI.WebControls.Calendar Calendar;
         
         /// <summary>
-        /// dd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dd;
-        
-        /// <summary>
         /// dateLabel control.
         /// </summary>
         /// <remarks>

@@ -19,6 +19,12 @@ namespace WebApptest1.website.admin
 
         }
 
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            string date = Calendar1.SelectedDate.ToShortDateString();
+            dateLabel.Text = date;
+        }
+
         protected void b1_Click(object sender, EventArgs e)
         {
             a = Class1.GetRandomPassword(10).ToString();
@@ -28,11 +34,16 @@ namespace WebApptest1.website.admin
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into product values('"+t1.Text+"','"+t2.Text+"',"+t3.Text+","+t4.Text+",'"+b.ToString()+"')";
+            cmd.CommandText = "insert into product values('"+t1.Text+"','"+t2.Text+"','"+t3.Text+"','"+t4.Text+"','"+b.ToString()+"','"+dateLabel.Text+"')";
             cmd.ExecuteNonQuery();
-
             con.Close();
-            
+
+            con.Open();
+            SqlCommand cmd2 = con.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "insert into Category values('" + dateLabel.Text + "')";
+            cmd2.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
