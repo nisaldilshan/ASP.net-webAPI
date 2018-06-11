@@ -24,9 +24,31 @@
         </tr>
 
         <tr>
+        <td>-</td>
+        </tr>
+
+        <tr>
+        <td colspan="2" align="center">
+            <asp:Calendar ID="Calendar1" runat="server" Width="238px"></asp:Calendar>
+        </td>
+        </tr>
+
+        <tr>
+        <td>-</td>
+        </tr>
+
+        <tr>
+        <td>Date : </td>
+        <td><asp:Label ID="dateLabel" runat="server" Text="Please Select a Date" ForeColor="Red"></asp:Label></td>
+            
+        </tr>
+
+        <tr>
         <td>product image</td>
         <td><asp:FileUpload ID="f1" runat="server" /></td>
         </tr>
+
+        
 
         <tr>
         <td colspan="2" align="center">
