@@ -25,6 +25,33 @@
     </asp:Repeater>
     <br />
 
+    <table border="2" cellpadding="10" cellspacing="15" style="font-size: 20px">
+        <tr>
+            <td colspan="3"><asp:Label ID="Label1" runat="server" ForeColor="Red" Text="01"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label2" runat="server" ForeColor="Red" Text="02"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label3" runat="server" ForeColor="Red" Text="03"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label4" runat="server" ForeColor="Red" Text="04"></asp:Label></td>
+        </tr>
+        <tr>
+            <td colspan="3"><asp:Label ID="Label5" runat="server" ForeColor="Red" Text="05"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label6" runat="server" ForeColor="Red" Text="06"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label7" runat="server" ForeColor="Red" Text="07"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label8" runat="server" ForeColor="Red" Text="08"></asp:Label></td>
+        </tr>
+        <tr>
+            <td colspan="3"><asp:Label ID="Label9" runat="server" ForeColor="Red" Text="09"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label10" runat="server" ForeColor="Red" Text="10"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label11" runat="server" ForeColor="Red" Text="11"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label12" runat="server" ForeColor="Red" Text="12"></asp:Label></td>
+        </tr>
+        <tr>
+            <td colspan="3"><asp:Label ID="Label13" runat="server" ForeColor="Red" Text="13"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label14" runat="server" ForeColor="Red" Text="14"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label15" runat="server" ForeColor="Red" Text="15"></asp:Label></td>
+            <td colspan="3"><asp:Label ID="Label16" runat="server" ForeColor="Red" Text="16"></asp:Label></td>
+        </tr>
+    </table>
+
     <table>
         <tr>
             <td>Enter Quantity</td>
