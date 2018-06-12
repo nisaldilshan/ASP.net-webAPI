@@ -14,8 +14,11 @@ namespace WebApptest1.website.user
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nisal_Dilshan\Desktop\web api\ASP.net-webAPI\WebApptest1\App_Data\shopping.mdf;Integrated Security=True");
         int id;
-        
+        string new_seating_str;
         string product_name, product_description, product_price, product_qty, product_images;
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString["id"] == null)
@@ -60,6 +63,7 @@ namespace WebApptest1.website.user
             foreach (DataRow dr in dt1.Rows)
             {
                 string abc = dr["array"].ToString();
+                new_seating_str = abc;
                 string[] s = abc.Split(',');
                 
 
@@ -68,9 +72,13 @@ namespace WebApptest1.website.user
                     System.Diagnostics.Debug.Write(s[j].ToString());
                     setcolor(s[j].ToString());
                 }
+
+                
             }
 
             con.Close();
+
+            Session[id.ToString()] = id.ToString();
         }
 
         protected void setcolor(string str)
@@ -146,7 +154,7 @@ namespace WebApptest1.website.user
             }
         }
 
-            protected void B1_Click(object sender, EventArgs e)
+        protected void B1_Click(object sender, EventArgs e)
         {
             con.Open();
             SqlCommand cmd = con.CreateCommand();
@@ -188,6 +196,13 @@ namespace WebApptest1.website.user
                     Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
                 }
             }
+
+            setcolor(t1.Text);
+
+            new_seating_str = new_seating_str + "," + t1.Text;
+            System.Diagnostics.Debug.WriteLine(new_seating_str);
+            Session[id.ToString()] = Session[id.ToString()] + "|" + new_seating_str;
+            System.Diagnostics.Debug.WriteLine(Session[id.ToString()]);
         }
     }
 }

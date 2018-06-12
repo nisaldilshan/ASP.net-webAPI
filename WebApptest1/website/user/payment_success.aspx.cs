@@ -72,6 +72,36 @@ namespace WebApptest1.website.user
                 Response.Redirect("login.aspx");
             }
 
+            
+
+            for (int i=0;i<100;i++)
+            {
+                if ((Session[i.ToString()] == null) || (Session[i.ToString()].ToString() == "")) {
+
+                }
+                else
+                {
+                    string id_with_seating = Session[i.ToString()].ToString();
+                    string[] stringarr = id_with_seating.Split('|');
+                    int id = Convert.ToInt32(stringarr[0]);
+                    System.Diagnostics.Debug.WriteLine("ID :" + id.ToString());
+                    System.Diagnostics.Debug.WriteLine("value :" + stringarr[1].ToString());
+
+                    SqlCommand cmd11 = con.CreateCommand();
+                    cmd11.CommandType = CommandType.Text;
+                    cmd11.CommandText = "DELETE FROM seats WHERE product_id = '"+id.ToString()+"'";
+                    cmd11.ExecuteNonQuery();
+                    
+
+                    SqlCommand cmd12 = con.CreateCommand();
+                    cmd12.CommandType = CommandType.Text;
+                    cmd12.CommandText = "insert into seats values('"+ id.ToString() + "','"+stringarr[1].ToString()+"')";
+                    cmd12.ExecuteNonQuery();
+
+
+                }
+            }
+
             con.Close();
 
             Session["user"] = "";

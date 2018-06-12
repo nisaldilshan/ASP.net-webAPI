@@ -31,7 +31,7 @@ namespace WebApptest1.website.user
                         a[j] = strArr1[j].ToString();
                     }
 
-                    tot = tot + (Convert.ToInt32(a[2].ToString()) * Convert.ToInt32(a[3].ToString()));
+                    tot = tot + Convert.ToInt32(a[2].ToString());
                 }
 
                 Session["tot"] = tot.ToString();

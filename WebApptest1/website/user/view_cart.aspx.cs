@@ -34,7 +34,7 @@ namespace WebApptest1.website.user
                     }
                     dt.Rows.Add(a[0].ToString(), a[1].ToString(), a[2].ToString(), a[3].ToString(), a[4].ToString(), i.ToString());
 
-                    tot = tot + (Convert.ToInt32(a[2].ToString()) * Convert.ToInt32(a[3].ToString()));
+                    tot = tot + Convert.ToInt32(a[2].ToString());
                 }
             }
 

@@ -12,10 +12,10 @@
                 <img src="<%#Eval("product_images") %>" height="300" width="200" />
                 </div>
                 <div style="height:300px; width:395px; float:left; border-style:solid; border-width:1px;">
-                item name = <%#Eval("product_name") %> <br />
-                product desc = <%#Eval("product_desc") %><br />
-                product price = <%#Eval("product_price") %><br />
-                product qty = <%#Eval("product_qty") %><br />
+                Name = <%#Eval("product_name") %> <br />
+                Time = <%#Eval("product_desc") %><br />
+                Price = <%#Eval("product_price") %><br />
+                Remaining Seats = <%#Eval("product_qty") %><br />
                 </div>
             </div>
             
@@ -54,9 +54,9 @@
 
     <table>
         <tr>
-            <td>Enter Quantity</td>
+            <td>Enter Seat number:</td>
             <td><asp:TextBox ID="t1" runat="server"></asp:TextBox></td>
-            <td><asp:Button ID="b1" runat="server" Text="Add to cart" OnClick="B1_Click" /></td>
+            <td><asp:Button ID="b1" runat="server" Text="Select" OnClick="B1_Click" /></td>
         </tr>
         <tr>
             <td colspan="3">
